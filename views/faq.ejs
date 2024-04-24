@@ -1,0 +1,48 @@
+<%-include("partials/header.ejs")%>
+    <section class="faq">
+        <div class="image">
+        <div class="heading-two">
+            <div class="container-one">
+                <h1>Finally Some Good News</h1>
+                <div class="paragraph">
+                   <p> All Your questions Answered Here</p>
+                </div>
+            </div>
+            </div>
+            <div class="image-heading"><p id="ss">Ask Your Questions Here</p>
+            <form action="/question" method="post">
+                <input type="text" name="question" id="data" placeholder="write your question here">
+                <input type="submit" id="submit-f"   value="Submit">
+            </form>
+        </div>
+        </div>
+        <div class="triangle">
+        </div>
+        <div class="questions">
+
+<div class="real-heading"><p>FAQ<span>'s</span></p></div>
+<div class="ques">
+          <div class="ones">
+            <p class="edit" onmouseover="togs()" onmouseleave="togsm()">How do I edit my order after placing it?</p>
+            <p class="s"id="hide">Please call us on +91-7259085922 or write email to packaging@swiggy.in mentioning your Order</p>
+          </div>
+          <div class="ones">
+            <p class="edit"onmouseover="togs_one()" onmouseleave="togsm_one()"">How do I cancel my order?</p>
+            <p class="s" id="hides">Please refer to our return & cancellation policy here</p>
+          </div>
+          <div class="ones">
+            <p class="edit" onmouseover="togs_two()" onmouseleave="togsm_two()">How will be my orders delivered?</p>
+            <p class="s" id="hidew">Orders are delivered directly by the Swiggy Packaging Assist suppliers. Different items in an order could be fulfilled by different suppliers. We will share the contact details and amount payable for all deliveries via email and SMS</p>
+          </div>
+          <div class="ones">
+            <p class="edit"onmouseover="togs_three()" onmouseleave="togsm_three()"">When is the order delivered?</p>
+            <p class="s" id="hidea">Our suppliers deliver the products within 3-4 days of orders being placed. For products with your logo printed, lead time could be higher. Please check details at the product page.</p>
+          </div>
+          <div class="ones">
+            <p class="edit" onmouseover="togs_four()" onmouseleave="togsm_four()">Is delivery free?</p>
+            <p class="s" id="hidef">Yes. There are no delivery or handling charges.</p>
+          </div>
+       </div>
+    </div>
+    </section>
+    <%-include("partials/footer.ejs")%>

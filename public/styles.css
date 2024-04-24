@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    border:none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-size: 100%;
+    list-style: none;
+}
+:root{
+    --bg-color:#1f0d10;
+    --text-color:#E6EFFB;
+    --main-color:#ee7952;
+}
+.order-list{
+    min-height: 70vh;
+    padding:5rem 9% 2rem;
+    text-decoration: none;
+    background-image: url(./2287.jpg);
+}
+.order-list h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+.border{
+    margin-top: 2%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--main-color);
+    padding:2%;
+    padding-left: 4%;
+    border-radius:28px ;
+}
+.order:hover{
+    border-left:10px solid var(--main-color);
+    cursor:pointer;
+}
+.order-details{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.order-details h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.btn-box{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    width:9.2rem;
+    height:3rem;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+.btn-box .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+color: var(--text-color);
+    width: 15rem;
+    height: 100%;
+    border-radius: 1.4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    z-index:1;
+    overflow: hidden;
+    transition: 0.7s;
+    border:2px solid var(--main-color);
+    background-color: var(--main-color);
+}
+.btn-box .btn:hover{
+    color:var(--main-color);
+
+}
+.btn-box .btn::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background:var(--text-color);
+    z-index:-1;
+    transition: .5s;
+}
+.btn-box .btn:hover::before{
+    width:100%;
+}

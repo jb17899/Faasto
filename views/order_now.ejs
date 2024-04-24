@@ -1,0 +1,33 @@
+<%-include("partials/header.ejs")%>
+<div class="images mt-3">
+    <div class="container d-flex flex-column">
+        <h1 style="font-weight: 700;">Order Now</h1>
+    
+        <div class="row col-md-8">
+          <div class="col-sm-12">
+              <div class="card-body ns">
+                <form action="/order_now" method="POST">
+                  <div class="form-group">
+                    <label for="restaurent" style="font-weight: 700;">Restaurent Name</label>
+                    <input type="text" class="form-control" name="restaurent">
+                  </div>
+                  <div class="form-group">
+                    <label for="item" id="one" style="font-weight: 700;" class="d-flex justify-content-between">Item Name<span style="font-size: small;">Please check the restaurent from where you want to order</span></label>
+                    <input type="text" class="form-control" name="food_item">
+                  </div>
+                  <div class="form-group">
+                    <label for="address" style="font-weight: 700;">Address</label>
+                    <input type="text" class="form-control" name="address">
+                  </div>
+                  <div class="col-md-12 mt-3">
+                    <button type="submit" class="btn w-25" style="font-size: 1.2rem;">Order</button>
+                  </div>
+                </form>
+                <div class="container" style="height:100px"></div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%-include("partials/footer.ejs")%>

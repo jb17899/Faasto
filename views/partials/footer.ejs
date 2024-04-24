@@ -1,0 +1,136 @@
+<footer class="last">
+    <div class="title">
+        <div class="logo"></div>
+        <div class="claim">
+            <h1 class="best">Best Restaurents in Area.<span class="sp">At your fingertips Instantly!</span></h1>
+            <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "</p>
+        </div>
+    </div>
+    <div class="menu">
+        <a class="items" href="#">Home</a>
+        <a href="#" class="items">Your Orders</a>
+        <a href="#" class="items">About Us</a>
+        <a href="#" class="items">FAQ</a>
+        <a href="#" class="item">My Profile</a>
+    </div>
+    <div class="contact_values">
+        <div class="address">
+            <h1 class="head1"></h1>
+            <p class="add1">1717 Harrison St, San Francisco, CA 94103, United States</p>
+            <hr>
+            <a href="#" class="email">quick@gmail.com</a>
+            <a href="#" class="number">+91 123456789</a>
+            <div class="icons">
+                <i class='bx bxl-instagram' id ="sm"></i>
+                <i class='bx bxl-github' id="sms"></i>
+                <i class='bx bxl-twitter' id ="smt"></i>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>Copyright 2022 codewithsadee. All rights reserved.</p>
+    </div>
+    <div class="line"></div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    function myDoes(){
+    console.log("click");
+    $("#nbbs").toggle();
+}
+const myNav = document.getElementById('nbbs');
+const element = document.getElementById('navmms');
+window.onscroll = function() {
+    console.log(window.scrollY);
+    console.log(element.clientHeight);
+  if(window.scrollY > element.clientHeight){
+    myNav.classList.add('scrolled')
+  }else{
+    myNav.classList.remove('scrolled')
+  }
+}
+function callsm(){
+    console.log("app");
+    setTimeout(function(){
+    document.getElementById("npms").style.display="flex";
+    document.getElementById("npms").classList.add("nsspmn");
+    },500);
+}
+function callbm(){
+    console.log("app");
+    setTimeout(function(){
+        document.getElementById("npms").style.display="none";
+        document.getElementById("npms").classList.remove("nsspmn");
+    },500);
+}
+document.addEventListener("DOMContentLoaded", function() {
+    var happyCustomersCounter = document.getElementById("sn");
+    var dishesServedCounter = document.getElementById("sn1");
+    var totalBeveragesCounter = document.getElementById("sn2");
+    var cupOfCoffeesCounter = document.getElementById("sn3");
+  
+    var targetHappyCustomers = 4680;
+    var targetDishesServed = 865;
+    var targetTotalBeverages = 510;
+    var targetCupOfCoffees = 1350;
+  
+    var increment = 40; // Increment value for each iteration
+    var intervalDuration = 10; // Interval duration in milliseconds
+    
+    function increaseCounter(counterElement, targetValue) {
+      var currentValue = parseInt(counterElement.innerText);
+      if (currentValue < targetValue) {
+        counterElement.innerText = currentValue + increment;
+        setTimeout(function() {
+          increaseCounter(counterElement, targetValue);
+        }, intervalDuration);
+      } else {
+        counterElement.innerText = targetValue;
+      }
+    }
+  
+    increaseCounter(happyCustomersCounter, targetHappyCustomers);
+    increaseCounter(dishesServedCounter, targetDishesServed);
+    increaseCounter(totalBeveragesCounter, targetTotalBeverages);
+    increaseCounter(cupOfCoffeesCounter, targetCupOfCoffees);
+  });
+  function togs(){
+            $("#hide").toggle("slow");
+        }
+        function togsm(){
+            $("#hide").toggle("slow"); 
+        }
+
+        function togs_one(){
+            $("#hides").toggle("slow");
+        }
+        function togsm_one(){
+            $("#hides").toggle("slow"); 
+        }
+
+        function togs_two(){
+            $("#hidew").toggle("slow");
+        }
+        function togsm_two(){
+            $("#hidew").toggle("slow"); 
+        }
+
+        function togs_three(){
+            $("#hidea").toggle("slow");
+        }
+        function togsm_three(){
+            $("#hidea").toggle("slow"); 
+        }
+
+        function togs_four(){
+            $("#hidef").toggle("slow");
+        }
+        function togsm_four(){
+            $("#hidef").toggle("slow"); 
+        }
+</script>
+</body>
+</html>

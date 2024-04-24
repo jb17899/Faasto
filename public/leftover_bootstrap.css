@@ -1,0 +1,10 @@
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #f75019;
+    outline: 0;
+    box-shadow: 0 0 0 0.20rem #ee7f5a;
+  }
+  .rounded{
+    border-radius: 40px;
+  }

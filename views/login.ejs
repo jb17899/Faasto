@@ -1,0 +1,24 @@
+<%-include("partials/header.ejs")%>
+<div class="back d-flex flex-column align-items-center justify-content-center" style="height:90vh">
+<div class="container p-5 bg-body-tertiary d-flex flex-column align-items-center rounded col-md-6">
+    <div class="container p-0 d-flex justify-content-center">
+        <h1>LOG IN</h1>
+    </div>
+<form action="/signin" method="POST" class="border-success mt-3 col-md-7">
+  <div class="form-floating">
+    <input type="text" class="form-control" id="floatingInput" placeholder="<%=locals.error?error:'name@example.com'%>" name="username">
+    <label for="floatingInput">Email address/Username</label>
+  </div>
+  <div class="form-floating mt-1">
+    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="password">
+    <label for="floatingInput">Password</label>
+  </div>
+    <div class="col-md-12 mt-3 d-flex justify-content-center">
+    <button type="submit" class="btn w-25" style="font-size: 1.2rem;">LOG IN</button>
+  </div>
+  <p class="ms-2" style="font-size: 0.9rem;">If you are new to site,please create account here.<a href="/signsup" style="margin-top: -10px;text-decoration: underline;color:#ee7952">Sign up</a></p>
+  </form>
+</div>
+<div class="container" style="height:20px;width:20px"></div>
+</div>
+<%-include("partials/footer.ejs")%>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    border:none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-size: 100%;
+    list-style: none;
+}
+:root{
+    --bg-color:#1f0d10;
+    --text-color:#E6EFFB;
+    --main-color:#ee7952;
+}
+.heading{
+    height:40vh;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:5rem 9%;
+}
+.heading h2{
+    font-size:3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--main-color);
+}
+.heading p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+#mission{
+    padding:5rem 9% 2rem;
+    text-decoration: none;
+}
+.mis-heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.mis-heading h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--main-color);
+}
+.mis-heading p{
+    font-size: 1.1rem;
+
+}
+.values{
+    padding-top:3%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.values h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--main-color);
+}
+.values ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.sp-one{
+    font-weight: 700;
+    color: var(--main-color);
+}
+.values ul li{
+    font-size: 1.1rem;
+}
+.contact-footer{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.contact-footer h2{
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--main-color);
+}
+.contact-footer p{
+    font-size: 1.1rem;
+}
+
+

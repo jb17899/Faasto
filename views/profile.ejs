@@ -1,0 +1,112 @@
+<%-include("partials/header.ejs")%>
+<section class="profile">
+ <div class="color bg-body-tertiary">  </div>
+    <div class="icon"><i class='bx bx-menu'></i></div>
+    <div class="sidebar">
+        <div class="grid-boxes-profile" style="z-index:1000;">
+            <ul>
+                <li class="twos-profile"><a href="#">Your Activity</a></li>
+                <li class="twos-profile"><a href="#">Food Orders</a></li>
+                <li class="twos-profile"><a href="#">Money</a></li>
+                <li class="twos-profile"><a href="#">Coupons</a></li>
+                <li class="twos-profile"><a href="#">More</a></li>
+            </ul>
+        </div>
+    </div>
+
+ <%if(locals.login){%>   
+    <div class="upper-headings">
+        <div class="welcome"><p>Welcome Back,<%=name%></p></div>    
+      <div class="imag">
+        <img src="5926713.jpg" alt="" width="100px" height="100px"></div>
+    </div>
+    <div class="profiles">
+        <div class="ap-profiles">
+         <p>Your Profile</p>
+        </div>
+        <div class="forms">
+            <div class="name"><p><span class="sp-profile">Name:</span>Vaelin Al Sorna</p>
+            <p><span class="sp-profile">Age</span>:18</p>
+            <p><span class="sp-profile">Phone-number:</span>+91 123456789</p>
+        </div>
+        </div>
+        
+        <div class="restaurent-profile">
+            <p class="rp">Restaurents Liked</p>
+                <div class="flex-profile">
+                    <div class="ones-profile">
+                        <img src="instructuion-1.png" height="68px"   alt="..">
+                        <p style="color: #ee7952;">Lorem Ipsum</p>
+                        <p>Non enim praesent elementum facilisis </p></div>
+                    <div class="ones-profile">
+                        <img src="instructuion-1.png" height="68px"   alt="..">
+                        <p style="color: #ee7952;">Lorem Ipsum</p>
+                        <p>Non enim praesent elementum facilisis.</p>
+                    </div>
+                    <div class="ones-profile">
+                        <img src="instructuion-1.png" height="68px"   alt="..">
+                        <p style="color: #ee7952;">Lorem Ipsum</p>
+                        <p>Non enim praesent elementum facilisis l</p>
+                    </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="lower_heading">
+        <div class="prev">
+            <p class="prev-one">Your previous Transactions</p>
+
+        <div class="transactions">
+            <div class="one">
+                    <div class="fle">
+                        <p>$25</p>
+                        <p>Order #001</p>
+                        <p>01 June 2011</p>
+                        
+                    </div>
+            </div>
+
+            <div class="one">
+                <div class="fle">
+                    <p>$25</p>
+                    <p>Order #001</p>
+                    <p>01 June 2011</p>
+                    
+                </div>
+        </div>
+
+        <div class="one">
+            <div class="fle">
+                <p>$25</p>
+                <p>Order #001</p>
+                <p>01 June 2011</p>
+                
+            </div>
+    </div>
+
+    <div class="one">
+        <div class="fle">
+            <p>$25</p>
+            <p>Order #001</p>
+            <p>01 June 2011</p>
+            
+        </div>
+</div>
+    <div class="one">
+        <div class="fle">
+            <p>$25</p>
+            <p>Order #001</p>
+            <p>01 June 2011</p>
+            
+        </div>
+</div>
+        </div>
+    </div>
+    <%} else{%>
+        <div class="container">
+            <h1>Nothing to show here please login first.</h1><a href="/login" class="btn" style="text-decoration: none;font-size: 20px;" class="as">Log In</a>
+        </div>
+<%}%>
+</section>
+<%-include("partials/footer.ejs")%>

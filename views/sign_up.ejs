@@ -1,0 +1,31 @@
+<%-include("partials/header.ejs")%>
+<div class="back d-flex flex-column align-items-center justify-content-center" style="height:90vh">
+<div class="container p-5 bg-body-tertiary d-flex flex-column align-items-center rounded col-md-6">
+    <div class="container p-0 d-flex justify-content-center">
+        <h1>SIGN UP</h1>
+    </div>
+<form action="/signsin" method="POST" class="border-success mt-3 col-md-7">
+    <div class="form-group">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control border-warning" name="username" placeholder="<%=locals.error?error:''%>">
+    </div>
+    <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control border-warning" name="email">
+    </div>
+    <div class="form-group">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="number" class="form-control border-warning" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control border-warning" name="password">
+    </div>
+    <div class="col-md-12 mt-3 d-flex justify-content-center">
+    <button type="submit" class="btn w-25" style="font-size: 1.2rem;">Sign Up</button>
+  </div>
+  </form>
+</div>
+<div class="container" style="height:20px;width:20px"></div>
+</div>
+<%-include("partials/footer.ejs")%>
