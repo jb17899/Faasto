@@ -828,6 +828,8 @@ a:hover{
     z-index:1000000000;
     padding-top:20px;
     top:0;
+    left:0;
+    right:0;
   }
   .carousel .item{
     height: 300px;
