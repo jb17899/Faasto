@@ -16,11 +16,11 @@ const saltRounds = 10;
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use(session({
-    secret:"VERYSECRETWORD",
+    secret:process.env.SECRET_WORD,
     resave:false,
     saveUninitialized:false,
     cookie:{
-        maxAge:1000*60*60*24,
+        maxAge:1000*60*60*24*100000,
       }
 }));
 app.use(passport.initialize());
@@ -45,6 +45,12 @@ app.get("/signsup",(req,res)=>{
     res.render("sign_up.ejs",{
      login:(req.user)?true:false   
     });
+})
+app.get('/logout',(req,res)=>{
+    req.logout(function(err){
+        if(err) throw err;
+        res.redirect("/");
+    })
 })
 app.post("/signin",passport.authenticate("local",{
     successRedirect:"/",

@@ -874,4 +874,10 @@ a:hover{
     flex-direction: column;
     justify-content: center;
 }
+.bns:hover{
+    border-radius: 0px;
+    padding: 0;
+    border-radius: 5px!important;
+}
+
 
