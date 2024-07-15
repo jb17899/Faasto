@@ -187,10 +187,14 @@ app.get("/profile",(req,res)=>{
     });
 })
 passport.serializeUser((user,cb)=>{
-cb(null,user);}
+    process.nextTick(function(){
+return cb(null,user);
+    })}
 )
 passport.deserializeUser((user,cb)=>{
-    cb(null,user);
+    process.nextTick(function(){
+return cb(null,user);
+    })
 })
 
 app.listen(port,(err)=>{
