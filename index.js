@@ -3,6 +3,7 @@ import supabase from "./supabase.js";
 import bcrypt from "bcrypt";
 import session from "express-session";
 import passport from "passport";
+import ejs from "ejs";
 import {Strategy} from "passport-local";
 import dotenv from "dotenv";
 dotenv.config();
@@ -13,6 +14,8 @@ const months = [
 const app = express();
 const port = 3012;
 const saltRounds = 10;
+app.set('view engine', 'ejs');
+app.engine("ejs",ejs.__express);
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use(session({
