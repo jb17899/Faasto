@@ -5,6 +5,9 @@ import session from "express-session";
 import passport from "passport";
 import ejs from "ejs";
 import {Strategy} from "passport-local";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
 import dotenv from "dotenv";
 dotenv.config();
 const months = [
@@ -15,6 +18,7 @@ const app = express();
 const port = 3012;
 const saltRounds = 10;
 app.set('view engine', 'ejs');
+app.set("views", __dirname+"/views");
 app.engine("ejs",ejs.__express);
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
