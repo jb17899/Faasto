@@ -18,10 +18,10 @@ const app = express();
 const port = 3012;
 const saltRounds = 10;
 app.set('view engine', 'ejs');
-app.use(express.static(__dirname+'public'));
+app.set("views", __dirname+"/views");
 app.engine("ejs",ejs.__express);
 app.use(express.urlencoded({extended:true}));
-app.use(express.static('public'));
+app.use(express.static(__dirname+'/public'));
 app.use(session({
     secret:process.env.SECRET_WORD,
     resave:false,
